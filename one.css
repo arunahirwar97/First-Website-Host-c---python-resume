@@ -1,0 +1,53 @@
+<style type="text/css">
+	
+	#one{
+		text-align: center;
+	    color: white;
+		text-transform: uppercase;
+		background-color: green;
+		font-size: 100px;
+
+	}
+
+	
+#t{
+ border: 1px double red;
+ background-color: black;
+
+}
+
+#t button{
+      
+      font-size: 35px;
+      margin:20px;
+      border-radius: 30px;
+      text-align: center;
+       width: 200px;
+       text-transform: uppercase;
+
+
+}
+ul a {
+	text-decoration: none;
+	list-style: none;
+}
+
+
+
+	#two{
+		margin-top: 100px;
+		font-size: 26px;
+	}
+	#five{
+		border: 10px ridge pink;
+		width: 500px;
+		padding-left: 30px;
+
+	}
+
+	#five ul li a {
+		text-decoration:none;
+		font-size: 30px;
+
+	}
+</style>

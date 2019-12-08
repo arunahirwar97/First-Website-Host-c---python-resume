@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>c++ program</title>
+</head>
+<body>
+	<h1 id="one">c++ program </h1>
+	
+  <div id="t">
+   <ul>
+      <button><a href="index.html">Home</a></button>
+      <button><a href="c++.html">c++ </a></button>
+      <button><a href="python.html">python </a></button>
+      <button><a href="resume.html">resume</a></button>
+    </ul>
+  </div>
+    <div id="six"> 
+    <h1>Binary  search </h1>
+    <p>It is find the element in the using binary search using c++ programming. so its first you enter how many number
+    and after the enter element  and enter the find element and gives the elemnt and locations.</p>
+    <pre><p id="sev">
+    #include< conio.h>
+    #include< iostream.h>
+    void main()
+    {
+      clrscr();
+      int a[100],loc,mid,beg,end,n,flag=0,item;
+      cout<<"How many element insert :";
+      cin>>n;
+      cout<<"Enter the element of the array :"<< endl;
+      for(int i=1;i<=n;i++)
+        {
+           cin>>a[i];
+        }
+      cout<<"Enter the element to be searching "<< endl;
+      cin>>item;
+      loc = 0;
+      beg = 0;
+      end=n-1;
+      while((beg<=end) && (item!=a[mid]))
+        {
+          mid = ((beg+end)/2);
+          if(item==a[mid])
+            {
+              cout<<"Search is successful  "<< item<< endl;
+              loc = mid;
+              cout<<"Position of the element is : "<< loc+1;
+              flag = flag+1;
+            }
+          if(item< a[mid])
+           end=mid+1;
+          else
+          beg = mid+1;
+        }
+      if(flag==0)
+        {
+           cout<<"Search is ot sussecfull"<< endl;
+        }
+      getch();
+    }
+    </p>
+     <h1>output</h1><p id="eight">
+      How many element insert :10
+      Enter the element of the array :
+      100
+      120
+      236
+      222
+      145
+      158
+      258
+      555
+      684
+      520
+      Enter the no. to be search : 684
+      Search is successful  :684
+      Position of the element is : 9
+
+
+     </p>
+  
+ 
+     </pre>
+    </div> 
+</body>
+</html>
+<style type="text/css">
+	#one{
+		text-align: center;
+	    color: white;
+		text-transform: uppercase;
+		background-color: green;
+		font-size: 100px;
+
+	    }
+    
+#t{
+ border: 1px double red;
+ background-color: black;
+
+}
+
+#t button{
+      
+      font-size: 35px;
+      margin:20px;
+      border-radius: 30px;
+      text-align: center;
+       width: 200px;
+       text-transform: uppercase;
+
+
+}
+ul a {
+  text-decoration: none;
+  list-style: none;
+}
+
+
+	#six{
+		margin-top: 180px;
+
+	}
+	#sev{
+		border:2px ridge red;
+		width: 900px;
+		padding: 0px;
+		font-size: 22px;
+
+	}
+	#eight{
+		border: 3px ridge white;
+        width: 500px;
+        background-color: black;
+        color: white;
+        font-size: 22px;
+
+	}
+	h1 
+	{
+		text-transform: uppercase;
+	}
+	p{
+		font-size: 23px;
+	}
+</style>

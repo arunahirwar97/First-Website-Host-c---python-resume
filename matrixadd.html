@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>c++ program</title>
+</head>
+<body>
+	<h1 id="one">c++ program </h1>
+	
+  <div id="t">
+   <ul>
+      <button><a href="index.html">Home</a></button>
+      <button><a href="c++.html">c++ </a></button>
+      <button><a href="python.html">python </a></button>
+      <button><a href="resume.html">resume</a></button>
+    </ul>
+  </div>
+    <div id="six"> 
+    <h1>Find addition of two matrix .</h1>
+    <p>It is the find addition of two matrix using c++ programming.
+       </p>
+    <pre><p id="sev">
+    #include< conio.h>
+    #include< iostream.h>
+    void main()
+    {
+      clrscr();
+      int a[2][2],b[2][2],s[2][2];
+      int i,j,k;
+      cout<<"Enter first matrix "<< endl;
+      for(i=1;i<=2;i++)
+        {
+          for(j=1;j<=2;j++)
+	        {
+	          cout<<"Enter i and j :"<< endl;
+	          cin>>a[i][j];
+	        } 
+         }
+       cout<<"Enter second matrix : "<< endl;
+       for(i=1;i<=2;i++)
+         {
+           for(j=1;j<=2;j++)
+	         {
+	           cout<<"Enter the i and j :"<< endl;
+	           cin>>b[i][j];
+           	}
+         }
+       for(i=1;i<=2;i++)
+         {
+           for(j=1;j<=2;j++)
+          	{
+	           s[i][j] = a[i][j] + b[i][j];
+	        }
+         }
+       cout<<"Matrix Addition is = \n";
+       for(i=1;i<=2;i++)
+        {
+          for(j=1;j<=2;j++)
+         	{
+	          cout<< s[i][j];
+	        }
+        }
+    getch();
+  } 
+    </p>
+     <h1>output</h1><p id="eight">
+     	Enter first matrix :
+     	Enter the i and j :11
+     	1
+     	Enter the i and j : 12
+     	1
+     	Enter the i and j :21
+     	2
+     	Enter the i and j :22
+     	2
+     	Enter second matrix :
+     	Enter the i and j :22
+     	1
+     	Enter the i and j :23
+     	2
+     	Enter the i and j :32
+     	2
+     	Enter the i and j :33
+     	1
+      	Matrix addtion is = 2 3 4 3
+
+
+     </p>
+ 
+     </pre>
+    </div> 
+</body>
+</html>
+<style type="text/css">
+	#one{
+		text-align: center;
+	    color: white;
+		text-transform: uppercase;
+		background-color: green;
+		font-size: 100px;
+
+	    }
+   
+#t{
+ border: 1px double red;
+ background-color: black;
+
+}
+
+#t button{
+      
+      font-size: 35px;
+      margin:20px;
+      border-radius: 30px;
+      text-align: center;
+       width: 200px;
+       text-transform: uppercase;
+
+
+}
+ul a {
+  text-decoration: none;
+  list-style: none;
+}
+
+
+	#six{
+		margin-top: 180px;
+
+	}
+	#sev{
+		border:2px ridge red;
+		width: 800px;
+		padding: 0px;
+		font-size: 22px;
+
+	}
+	#eight{
+		border: 3px ridge white;
+        width: 500px;
+        background-color: black;
+        color: white;
+        font-size: 22px;
+
+	}
+	h1 
+	{
+		text-transform: uppercase;
+	}
+	p{
+		font-size: 23px;
+	}
+</style>

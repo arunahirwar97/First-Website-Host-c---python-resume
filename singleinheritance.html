@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>c++ program</title>
+</head>
+<body>
+	<h1 id="one">c++ program </h1>
+	
+  <div id="t">
+    <ul>
+      <button><a href="index.html">Home</a></button>
+      <button><a href="c++.html">c++ </a></button>
+      <button><a href="python.html">python </a></button>
+      <button><a href="resume.html">resume</a></button>
+    </ul>
+  </div>
+    <div id="six"> 
+    <h1>Single inheritance</h1>
+    <p>It is Single inheritance  using c++ programming.
+       </p>
+    <pre><p id="sev">
+    #include< conio.h>
+    #include< iostream.h>
+    class base
+      {
+        float a,b,c;
+        public :
+        void read_add()
+          {
+            cout<<"For addition";
+            cout<<"Enter the value of a :";
+            cin>>a;
+            cout<<"Enter the value of b :";  
+            cin>>b;
+            c =a+b;
+          }
+        void show_add()
+          {
+            cout<<"Addition = "<< c<< endl;
+          }
+      };
+
+    class drived : public base
+      {
+        float a,b,c;
+        public :
+        void read_sub()
+         {
+          read_add();
+          cout<<"For Subtraction "<< endl;
+          cout<<"Enter the value of a :";
+          cin>>a;
+          cout<<"Enter the value of b :"; 
+          cin>>b;
+          c =a-b;
+         }
+        void show_sub() 
+          {
+            show_add();
+            cout<<"Subtraction =  "<< c<< endl;
+          }
+      }d;
+
+    void main()
+      {
+        cout<<"Enter the all values "<< endl;
+        d.read_div();
+        cout<<"Show the result "<< endl;
+        d.show_div();
+        getch();
+      }
+
+
+    
+    </p>
+     <h1>output</h1><p id="eight">
+     Enter the all values 	
+     For Addition
+     Enter the value of a : 54
+     Enter the value of b : 20
+     For Subtraction 
+     Enter the value of a : 1000
+     Enter the value of b : 100
+     
+     Show the result
+     Addtion = 74
+     Subtraction = 900
+     
+     </p>
+ 
+     </pre>
+    </div> 
+</body>
+</html>
+<style type="text/css">
+	#one{
+		text-align: center;
+	    color: white;
+		text-transform: uppercase;
+		background-color: green;
+		font-size: 100px;
+
+	    }
+   
+#t{
+ border: 1px double red;
+ background-color: black;
+
+}
+
+#t button{
+      
+      font-size: 35px;
+      margin:20px;
+      border-radius: 30px;
+      text-align: center;
+       width: 200px;
+       text-transform: uppercase;
+
+
+}
+ul a {
+  text-decoration: none;
+  list-style: none;
+}
+
+
+
+	#six{
+		margin-top: 180px;
+
+	}
+	#sev{
+		border:2px ridge red;
+		width: 600px;
+		padding: 0px;
+		font-size: 22px;
+
+	}
+	#eight{
+		border: 3px ridge white;
+        width: 500px;
+        background-color: black;
+        color: white;
+        font-size: 22px;
+
+	}
+	h1 
+	{
+		text-transform: uppercase;
+	}
+	p{
+		font-size: 23px;
+	}
+</style>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>python programs</title>
+</head>
+<body>
+	<h1 id="one">python programs </h1>
+	
+	<div id="t">
+		<ul>
+			<button><a href="index.html">Home</a></button>
+			<button><a href="c++.html">c++ </a></button>
+			<button><a href="python.html">python </a></button>
+			<button><a href="resume.html">resume</a></button>
+		</ul>
+	</div>
+    <div id="six"> 
+    <h1>Simple calculater.</h1>
+    <p>It is simple calculater using python programming. It is to four operation 1 is addition , 2 is sutraction ,3 is multipication and 4 is division so select any one and gets result. 
+       </p>
+    <pre><p id="sev">
+print("\t\tSimple calculater ")
+print("\n 1 - Addition \n 2 - Subtraction \n 3 - Multipication \n 4 -Division  ")
+calci = int(input("Please enter any one choice : "))
+
+if calci == 1 :
+
+    a = int(input("Enter first number : "))
+    b = int(input("Enter second number : "))
+    addition = a+b
+    print("Addition = ",addition)
+
+elif calci == 2 :
+    a = int(input("Enter first number : "))
+    b = int(input("Enter second number : "))
+    div = a-b
+    print("Subtraction = ",div)
+elif calci == 3 :
+    a = int(input("Enter first number : "))
+    b = int(input("Enter second number : "))
+    mul = a*b
+    print("Multipication = ",mul)
+elif calci == 4 :
+    a = float(input("Enter first number : "))
+    b = float(input("Enter second number : "))
+    div = a/b
+    print("Division = ",div)
+
+else: print("You are enter wrong choice ")
+
+
+</p><h1>output</h1><p id="eight">
+     Simple calculater 
+1 - Addition 
+2 - Subtraction 
+3 - Multipication
+4 - division
+Please enter any one choice : 2
+Enter first number : 258
+Enter second number : 1058
+Subtraction = 800
+ </p>
+ 
+     </pre>
+    </div> 
+</body>
+</html>
+<style type="text/css">
+	#one{
+		text-align: center;
+	    color:red;
+		text-transform: uppercase;
+		background-color: red;
+		font-size: 100px;
+		background-image: url('11331.jpg');
+		background-size: cover;
+		height: 200px; 
+		line-height: 200px;
+
+	}
+#t{
+ border: 1px double red;
+ background-color: black;
+
+}
+
+#t button{
+      
+      font-size: 35px;
+      margin:20px;
+      border-radius: 30px;
+      text-align: center;
+       width: 200px;
+       text-transform: uppercase;
+
+
+}
+ul a {
+	text-decoration: none;
+	list-style: none;
+}
+
+
+	#six{
+		margin-top: 180px;
+
+	}
+	#sev{
+		border:2px ridge red;
+		width: 1000px;
+		padding: 0px;
+		font-size: 22px;
+
+	}
+	#eight{
+		border: 3px ridge white;
+        width: 800px;
+        background-color: black;
+        color: white;
+        font-size: 22px;
+
+	}
+	h1 
+	{
+		text-transform: uppercase;
+	}
+	p{
+		font-size: 23px;
+	}
+</style>

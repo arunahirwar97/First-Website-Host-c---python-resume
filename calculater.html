@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>c++ program</title>
+</head>
+<body>
+	<h1 id="one">c++ program </h1>
+	
+	<div id="t">
+		<ul>
+			<button><a href="index.html">Home</a></button>
+			<button><a href="c++.html">c++ </a></button>
+			<button><a href="python.html">python </a></button>
+			<button><a href="resume.html">resume</a></button>
+		</ul>
+	</div>
+    <div id="six"> 
+    <h1>Simple calculater</h1>
+    <p>It is simple calculater using c++ programming. So it is four option and choose any option when addition ,multipication,division and subtraction and after the enter value of a and b so find the result . 
+       </p>
+    <pre><p id="sev">
+    #include< iostream.h>
+    #include< conio.h>
+    void main()
+    {
+         int b,c;
+         char a;
+         cout<<"Enter an operater(+,-,*,/) : ";
+         cin>>a;
+         cout<<"\nEnter two number :";
+         cin>>b>>c;
+         cout<<"\n\n\n";
+         switch(a)
+            {
+                case '+': cout<< b<<"+"<< c << "="<< b+c;
+	            break;
+                case '-': cout<< b<<"-"<< c << "="<< b-c;
+	            break;
+                case '*': cout<< b<<"*"<< c<<"="<< b*c;
+	            break;
+                case '/': cout<< b<<"/"<< c<<"="<< b/c;
+	            break;
+                default :
+                cout<<"You are wrong choice" 
+	        }
+	     getch();
+	}
+    </p>
+     <h1>output</h1><p id="eight">
+           Enter an operater(+,-,*,/) : +
+           Enter two number : 10 1000 
+           10 + 1000 = 1010  
+    
+         </p>
+ 
+     </pre>
+    </div> 
+</body>
+</html>
+<style type="text/css">
+	#one{
+		text-align: center;
+	    color: white;
+		text-transform: uppercase;
+		background-color: green;
+		font-size: 100px;
+
+	    }
+    
+#t{
+ border: 1px double red;
+ background-color: black;
+
+}
+
+#t button{
+      
+      font-size: 35px;
+      margin:20px;
+      border-radius: 30px;
+      text-align: center;
+       width: 200px;
+       text-transform: uppercase;
+
+
+}
+ul a {
+	text-decoration: none;
+	list-style: none;
+}
+
+
+
+	#six{
+		margin-top: 180px;
+
+	}
+	#sev{
+		border:2px ridge red;
+		width: 900px;
+		padding: 0px;
+		font-size: 22px;
+
+	}
+	#eight{
+		border: 3px ridge white;
+        width: 500px;
+        background-color: black;
+        color: white;
+        font-size: 22px;
+
+	}
+	h1 
+	{
+		text-transform: uppercase;
+	}
+	p{
+		font-size: 23px;
+	}
+</style>

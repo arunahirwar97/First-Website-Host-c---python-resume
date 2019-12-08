@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>c++ program</title>
+</head>
+<body>
+	<h1 id="one">c++ program </h1>
+	
+  <div id="t">
+   <ul>
+      <button><a href="index.html">Home</a></button>
+      <button><a href="c++.html">c++ </a></button>
+      <button><a href="python.html">python </a></button>
+      <button><a href="resume.html">resume</a></button>
+    </ul>
+  </div>
+    <div id="six"> 
+    <h1> Merg of the any number.</h1>
+    <p>It is merg of the any number using c++ programming. It is the assign two variable and its the enter  the elements for both variables and after the result gives element are merge .
+       </p>
+    <pre><p id="sev">
+    #include< conio.h>
+    #include< iostream.h>
+    void main()
+    {  
+      int a[20],b[20],c[40],n,m,i,j,k;
+      clrscr();
+      cout<<"Enter of the limit A : "<< endl;
+      cin>>n;
+      cout<<"Enter the the limit B"<< endl;
+      cin>>m;
+      cout<<"Enter the element A "<< endl;
+         for(i=0;i< n;i++)
+           {
+             cout<<"\n"<< a[i];
+           }
+      cout<<"Enter the elements of the B : "<< endl;
+         for(j=0;j<=m;j++)
+           {
+             cin>>b[i];
+           }
+      i=j=0;
+      while(i< n &&i< m)
+        {
+          if(a[i]< b[j])
+            {
+              c[k++]=a[i++];
+            }  
+          else
+              if(a[i]>b[j])
+                {
+                  c[k++]=b[j++];
+                }
+              else
+                {
+                  c[k++]=b[j++];
+                  i++;
+                }
+        }
+      if(i< n)
+        {
+          int t;
+          for(t=0;t< n;t++)
+          c[k++]=a[i++];
+        }
+      if(j>m)
+        {
+          for(int t=0;t< m;t++)
+            {
+               c[k++]=b[j++];
+            }
+        }
+      cout<<"\n";
+      for(k=0;k<(m+n);k++)
+      cout<<"Merge given elements :"<< endl<< c[k];
+      getch();
+    } 
+    </p>
+     <h1>output</h1><p id="eight">
+    Enter of the limit A :
+    5
+    Enter of the limit B :
+    4
+    Enter element for A :
+    147
+    541
+    211
+    231
+    Enter element for B :
+    258
+    654
+    257
+    Merge given elements :
+    541
+    211
+    147
+    257
+    231
+    258
+    654
+</p>
+ 
+     </pre>
+    </div> 
+</body>
+</html>
+<style type="text/css">
+	#one{
+		text-align: center;
+	    color: white;
+		text-transform: uppercase;
+		background-color: green;
+		font-size: 100px;
+
+	    }
+   
+#t{
+ border: 1px double red;
+ background-color: black;
+
+}
+
+#t button{
+      
+      font-size: 35px;
+      margin:20px;
+      border-radius: 30px;
+      text-align: center;
+       width: 200px;
+       text-transform: uppercase;
+
+
+}
+ul a {
+  text-decoration: none;
+  list-style: none;
+}
+
+
+	#six{
+		margin-top: 180px;
+
+	}
+	#sev{
+		border:2px ridge red;
+		width: 800px;
+		padding: 0px;
+		font-size: 22px;
+
+	}
+	#eight{
+		border: 3px ridge white;
+        width: 600px;
+        background-color: black;
+        color: white;
+        font-size: 22px;
+
+	}
+	h1 
+	{
+		text-transform: uppercase;
+	}
+	p{
+		font-size: 23px;
+	}
+</style>

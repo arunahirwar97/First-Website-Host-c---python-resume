@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>c++ program</title>
+</head>
+<body>
+	<h1 id="one">c++ program </h1>
+	
+  <div id="t">
+   <ul>
+      <button><a href="index.html">Home</a></button>
+      <button><a href="c++.html">c++ </a></button>
+      <button><a href="python.html">python </a></button>
+      <button><a href="resume.html">resume</a></button>
+    </ul>
+  </div>
+    <div id="six"> 
+    <h1>Find area, perimeterand diagonal </h1>
+    <p>It is the find area , diagonal andperimeter using c++ programming.
+       It is the find any one for one time so choose any one and after the enter breathe and length aand find the any oe value for eaxample area ,perimeter etc.</p>
+    <pre><p id="sev">
+    #include< iostream.h>
+    #include< conio.h>
+    #include< math.h>
+    void main()
+      {
+        float b,l;
+        char ch;
+        float area,perimeter,diagonal,exit ;
+        cout<<"RECTANGULAR MENU "<< endl<< endl;
+        cout<<"Enter the value of length(l) and bredth (b) : "<< endl;
+        cin>>b>>l;
+        cout<<"1.Area "<< endl;
+        cout<<"2.perimeter  "<< endl;
+        cout<<"3.Diagonal"<< endl;
+        cout<<"4.exit  "<< endl;
+        cout<"Choose any one : "<< endl;
+        cin>>ch;
+        switch(ch)
+           {
+              case'1': area=l*b;
+              cout<<"area "<<"="<< l*b<<" ;"<< endl;
+	          break;
+              case'2':perimeter=2*(l+b);
+              cout<<"Perimeter "<<"= "<<2*(l+b)<<" ;"<< endl;
+	          break;
+              case'3': diagonal=sqrt((l*l)+(b*b));
+              cout<<"Diagonal " <<"= "<< sqrt((l*l)+(b*b))<< " ;"<< endl;
+	          break;
+              case'4' : break;
+              default: cout<<"This is not possible"<< endl;
+            }
+        getch();
+      }
+</p>
+     <h1>output</h1><p id="eight">
+     	RECTANGULAR MENU
+     	Enter the value of length(l) and bredth (b) : 10 10
+     	1.Area
+     	2.perimeter
+     	3.Diagonal
+     	4.exit
+     	Choose any one : 1
+     	area = 100
+     </p>
+ 
+     </pre>
+    </div> 
+</body>
+</html>
+<style type="text/css">
+	#one{
+		text-align: center;
+	    color: white;
+		text-transform: uppercase;
+		background-color: green;
+		font-size: 100px;
+
+	    }
+  
+#t{
+ border: 1px double red;
+ background-color: black;
+
+}
+
+#t button{
+      
+      font-size: 35px;
+      margin:20px;
+      border-radius: 30px;
+      text-align: center;
+       width: 200px;
+       text-transform: uppercase;
+
+
+}
+ul a {
+  text-decoration: none;
+  list-style: none;
+}
+
+
+
+	#six{
+		margin-top: 180px;
+
+	}
+	#sev{
+		border:2px ridge red;
+		width: 1000px;
+		padding: 0px;
+		font-size: 22px;
+
+	}
+	#eight{
+		border: 3px ridge white;
+        width: 550px;
+        background-color: black;
+        color: white;
+        font-size: 22px;
+
+	}
+	h1 
+	{
+		text-transform: uppercase;
+	}
+	p{
+		font-size: 23px;
+	}
+</style>

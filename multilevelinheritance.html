@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>c++ program</title>
+</head>
+<body>
+	<h1 id="one">c++ program </h1>
+	
+  <div id="t">
+    <ul>
+      <button><a href="index.html">Home</a></button>
+      <button><a href="c++.html">c++ </a></button>
+      <button><a href="python.html">python </a></button>
+      <button><a href="resume.html">resume</a></button>
+    </ul>
+  </div>
+    <div id="six"> 
+    <h1>Multilevel inheritance</h1>
+    <p>It is Multilevel inheritance  using c++ programming.
+       </p>
+    <pre><p id="sev">
+    #include< conio.h>
+    #include< iostream.h>
+    class aru
+      {
+        float a,b,c;
+        public :
+        void read_add()
+          {
+            cout<<"For addition";
+            cout<<"\nter the vlaue of a :";
+            cin>>a;
+            cout<<"\nEnter the vlaue of b :"; 
+            cin>>b;
+            c =a+b;
+          }
+
+        void show_add()
+          {
+            cout<<"Addtion =  "<< c<< endl;
+          }
+      };
+
+    class sub : public aru
+      { 
+         float a,b,c;
+         public :  
+         void read_sub()
+           {
+             read_add();
+             cout<<"\nFor Subtraction "<< endl;
+             cout<<"\nEnter the value of a :";
+             cin>>a;
+             cout<<"\nEnter the value of b :"; 
+             cin>>b;
+             c =a-b;
+           }
+        void show_sub()
+           {
+            show_add();
+            cout<<"\nSubtraction =  "<< c<< endl;
+           }
+      };
+
+    class mul : public sub
+     {
+       float a,b,c;
+       public :
+       void read_mul()
+         {
+           read_sub();
+           cout<<"For Multipication";
+           cout<<"\nEnter the value of a :";
+           cin>>a;
+           cout<<"\nEnter the value of b :"; 
+           cin>>b;
+           c =a*b;
+         }
+
+       void show_mul()
+         {
+         	show_sub();
+            cout<<"Multipication =  "<< c<< endl;
+         }
+     };
+
+
+    class div : public mul
+     {
+       float a,b,c; 
+       public :
+       void read_div()
+         {
+         	read_mul();
+            cout<<"For Division";
+            cout<<"\nEnter the value of a :";
+            cin>>a;
+            cout<<"\nEnter the value of b :"; 
+            cin>>b;
+            c =a/b;
+         }
+
+       void show_div()
+         {
+         	show_mul();
+            cout<<"Division = "<< c<< endl;
+          }
+     }d;
+
+    void main()
+      {
+        cout<<"Enter the all values \n"<< endl;
+        d.read_div();
+        cout<<"Show the result \n "<< endl;
+        d.show_div();
+        getch();
+      }
+    </p>
+     <h1>output</h1><p id="eight">
+     Enter the all values 	
+     For addition
+     Enter the value of a : 14
+     Enter the value of b : 20
+     For Subtraction 
+     Enter the value of a : 1000
+     Enter the value of b : 900
+     For multipication
+     Enter the value of a : 10
+     Enter the value of b : 20
+     For division
+     Enter the value of a : 200
+     Enter the value of b : 10
+
+     Show the result
+     Addtion = 34
+     Subtraction = 100
+     Multipication = 200
+     Division = 20 
+
+     </p>
+ 
+     </pre>
+    </div> 
+</body>
+</html>
+<style type="text/css">
+	#one{
+		text-align: center;
+	    color: white;
+		text-transform: uppercase;
+		background-color: green;
+		font-size: 100px;
+
+	    }
+  
+#t{
+ border: 1px double red;
+ background-color: black;
+
+}
+
+#t button{
+      
+      font-size: 35px;
+      margin:20px;
+      border-radius: 30px;
+      text-align: center;
+       width: 200px;
+       text-transform: uppercase;
+
+
+}
+ul a {
+  text-decoration: none;
+  list-style: none;
+}
+
+
+	#six{
+		margin-top: 180px;
+
+	}
+	#sev{
+		border:2px ridge red;
+		width: 650px;
+		padding: 0px;
+		font-size: 22px;
+
+	}
+	#eight{
+		border: 3px ridge white;
+        width: 500px;
+        background-color: black;
+        color: white;
+        font-size: 22px;
+
+	}
+	h1 
+	{
+		text-transform: uppercase;
+	}
+	p{
+		font-size: 23px;
+	}
+</style>

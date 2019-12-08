@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>c++ program</title>
+</head>
+<body>
+	<h1 id="one">c++ program </h1>
+
+  <div id="t">
+   <ul>
+      <button><a href="index.html">Home</a></button>
+      <button><a href="c++.html">c++ </a></button>
+      <button><a href="python.html">python </a></button>
+      <button><a href="resume.html">resume</a></button>
+    </ul>
+  </div>
+    <div id="six"> 
+    <h1>Find the sorted array using Bubble sort. .</h1>
+    <p>It is the Find the sorted array using Bubble sort using c++ programming. IT is the enter many elements in the unordered and after the result gives element are sorted .
+       </p>
+    <pre><p id="sev">
+    #include< conio.h>
+    #include< iostream.h>
+    void main()
+    { 
+      int a[100],n,i,j,temp;
+      clrscr();
+      cout<<"How many elements enters "<< endl;
+      cin>>n;
+      cout<<"Enter the elements of the array :"<< endl;
+      for(i=0;i<=n-1;i++)
+        {
+          cin>>a[i];
+        }
+      for(i=0;i<=n-1;i++)
+        {
+          for(j=0;j<=n-1;j++)
+            {
+              if(a[j]< a[j+1])
+                {
+                  temp=a[j];
+                  a[j]=a[j+1];
+                  a[j+1]=temp;
+                }
+            }
+        }
+      cout<<"Element of the array after the sorting :\n";
+      for(i=0;i<=n-1;i++)
+        {
+          cout<<"\n"<< a[i];
+        }
+    getch();
+  } 
+    </p>
+     <h1>output</h1><p id="eight">
+    How many element are enter in the array : 
+    10
+    Enter the element of the array :
+    2541
+    99
+    9875
+    55
+    62
+    369
+    3
+    65
+    988
+    32
+    Element of the array after the sorting :
+    9875
+    2541
+    988
+    369
+    99
+    65
+    62
+    55
+    32
+    3
+    
+     </p>
+ 
+     </pre>
+    </div> 
+</body>
+</html>
+<style type="text/css">
+	#one{
+		text-align: center;
+	    color: white;
+		text-transform: uppercase;
+		background-color: green;
+		font-size: 100px;
+
+	    }
+   
+#t{
+ border: 1px double red;
+ background-color: black;
+
+}
+
+#t button{
+      
+      font-size: 35px;
+      margin:20px;
+      border-radius: 30px;
+      text-align: center;
+       width: 200px;
+       text-transform: uppercase;
+
+
+}
+ul a {
+  text-decoration: none;
+  list-style: none;
+}
+
+
+	#six{
+		margin-top: 180px;
+
+	}
+	#sev{
+		border:2px ridge red;
+		width: 900px;
+		padding: 0px;
+		font-size: 22px;
+
+	}
+	#eight{
+		border: 3px ridge white;
+        width: 700px;
+        background-color: black;
+        color: white;
+        font-size: 22px;
+
+	}
+	h1 
+	{
+		text-transform: uppercase;
+	}
+	p{
+		font-size: 23px;
+	}
+</style>

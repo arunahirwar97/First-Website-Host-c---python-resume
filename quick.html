@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>c++ program</title>
+</head>
+<body>
+	<h1 id="one">c++ program </h1>
+
+  <div id="t">
+   <ul>
+      <button><a href="index.html">Home</a></button>
+      <button><a href="c++.html">c++ </a></button>
+      <button><a href="python.html">python </a></button>
+      <button><a href="resume.html">resume</a></button>
+    </ul>
+  </div>
+    <div id="six"> 
+    <h1>Find the sorted array using Quick sort. .</h1>
+    <p>It is the Find the sorted array using Quick sort using c++ programming. IT is the enter many elements in the unordered and after the result  gives element are sorted .
+       </p>
+    <pre><p id="sev">
+    #include< conio.h>
+    #include< iostream.h>
+    void main()
+    {
+      clrscr();
+      int a[max],n,i,l,h;
+      void main()
+        {
+          void
+          input(void);
+          input();
+          getch();
+        }
+      void input(void)
+       {
+         void output(int a[],int n);
+         void quick_sort(int a[],int l,int h);
+         cout<<"How many element are enter in the array :"<< endl;
+         cin>>n;
+         cout<<"\n";
+         cout<<"Enter the elements :"<< endl;
+         for(i=0;i<=n-1;i++)
+           {
+             cin>>a[i];
+           }
+         l=0;
+         h=n-1;
+         quick_sort(a,l,h);
+         cout<<"Sortex array :\n";
+         output(a,n);
+       }
+      void quick_sort(int a[],int l,int h)
+       {
+         int temp,key,low,high;
+         low=0;
+         key=a[(low+high)/(2)];
+         do
+            {
+              while(key>a[low])
+                {
+                  low++;
+                }
+       while(key< a[high])
+        {
+          high++;
+        }
+       if(low< high)
+         {
+           temp = a[low];
+           a[low++]=a[high];
+           a[high--]=temp;
+          }
+       while(low< high)
+       if(l< high)
+       quick_sort(a,l,high);
+       if(low< h)
+       quick_sort(a,low,h);
+
+     }
+    void output(int a[],int n)
+     {
+       for(i=0;i<=n-1;i++)
+         {
+           cout<<"\n"<< a[i];
+         }
+     }
+    getch();
+  } 
+    </p>
+     <h1>output</h1><p id="eight">
+    How many element are enter in the array : 
+    8
+    Enter the element of the array :
+    25
+    36
+    96
+    225
+    258
+    147
+    2541
+    Element of the array after the sorting :
+    2541
+    258
+    225
+    147
+    96
+    36
+    25
+
+     </p>
+ 
+     </pre>
+    </div> 
+</body>
+</html>
+<style type="text/css">
+	#one{
+		text-align: center;
+	    color: white;
+		text-transform: uppercase;
+		background-color: green;
+		font-size: 100px;
+
+	    }
+  
+#t{
+ border: 1px double red;
+ background-color: black;
+
+}
+
+#t button{
+      
+      font-size: 35px;
+      margin:20px;
+      border-radius: 30px;
+      text-align: center;
+       width: 200px;
+       text-transform: uppercase;
+
+
+}
+ul a {
+  text-decoration: none;
+  list-style: none;
+}
+
+
+
+	#six{
+		margin-top: 180px;
+
+	}
+	#sev{
+		border:2px ridge red;
+		width: 900px;
+		padding: 0px;
+		font-size: 22px;
+
+	}
+	#eight{
+		border: 3px ridge white;
+        width: 700px;
+        background-color: black;
+        color: white;
+        font-size: 22px;
+
+	}
+	h1 
+	{
+		text-transform: uppercase;
+	}
+	p{
+		font-size: 23px;
+	}
+</style>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>c++ program</title>
+</head>
+<body>
+	<h1 id="one">c++ program </h1>
+	
+  <div id="t">
+    <ul>
+      <button><a href="index.html">Home</a></button>
+      <button><a href="c++.html">c++ </a></button>
+      <button><a href="python.html">python </a></button>
+      <button><a href="resume.html">resume</a></button>
+    </ul>
+  </div>
+    <div id="six"> 
+    <h1>Linear search </h1>
+    <p>It is find the element in the using linear search using c++ programming. so its first you enter how many number
+    and after the enter element  and enter the find element and gives the elemnt and locations.</p>
+    <pre><p id="sev">
+    #include< conio.h>
+    #include< iostream.h>
+    void main()
+    {
+      clrscr();
+      int a[100],n,item,loc=-1;
+      cout<<"Enter the number of element :"<< endl;
+      cin>>n;
+      cout<<"Enter the item number :"<< endl;
+      for(int i=0;i< n-1;i++)
+         {
+           cin>>a[i];
+         }
+      cout<<"Enter the no. to be search :"<< endl;
+      cin>>item;
+      for(i=0;i< n-1;i++)
+         {
+           if(item==a[i])
+              {
+                loc=i;
+                break;
+              }
+
+        }
+        if(loc>=0)
+        {
+          cout<<"Dis found in position : "<< item<<"\nLocation is :"<< loc+1<< endl;
+        }
+        else
+         {
+           cout<<"Item does not exist "<< endl;
+         } 
+      getch();
+    }
+    </p>
+     <h1>output</h1><p id="eight">
+      Enter the number of element :10
+      Enter the item number :
+      100
+      120
+      236
+      222
+      145
+      158
+      258
+      555
+      520
+      Enter the no. to be search : 158
+      Dis found in position :158
+      Location is : 5
+
+
+     </p>
+  
+ 
+     </pre>
+    </div> 
+</body>
+</html>
+<style type="text/css">
+	#one{
+		text-align: center;
+	    color: white;
+		text-transform: uppercase;
+		background-color: green;
+		font-size: 100px;
+
+	    }
+   
+#t{
+ border: 1px double red;
+ background-color: black;
+
+}
+
+#t button{
+      
+      font-size: 35px;
+      margin:20px;
+      border-radius: 30px;
+      text-align: center;
+       width: 200px;
+       text-transform: uppercase;
+
+
+}
+ul a {
+  text-decoration: none;
+  list-style: none;
+}
+
+
+
+	#six{
+		margin-top: 180px;
+
+	}
+	#sev{
+		border:2px ridge red;
+		width: 1000px;
+		padding: 0px;
+		font-size: 22px;
+
+	}
+	#eight{
+		border: 3px ridge white;
+        width: 500px;
+        background-color: black;
+        color: white;
+        font-size: 22px;
+
+	}
+	h1 
+	{
+		text-transform: uppercase;
+	}
+	p{
+		font-size: 23px;
+	}
+</style>
